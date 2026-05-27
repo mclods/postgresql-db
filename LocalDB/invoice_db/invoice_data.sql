@@ -680,12 +680,14 @@ FROM item, sales_item
 WHERE item.id = sales_item.item_id
 ORDER BY item.id;
 
+
 -- Join with condition --
 SELECT item.id, item.price, sales_item.quantity, sales_item.discount
 FROM item
 INNER JOIN sales_item
 ON item.id = sales_item.item_id AND item.price > 120.00
 ORDER BY item.id;
+
 
 SELECT item.id, item.price, sales_item.quantity, sales_item.discount
 FROM item
