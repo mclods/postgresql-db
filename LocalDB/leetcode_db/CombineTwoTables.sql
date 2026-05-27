@@ -1,5 +1,9 @@
 -- https://leetcode.com/problems/combine-two-tables/description/
 -- Schema
+
+DROP TABLE IF EXISTS Person;
+DROP TABLE IF EXISTS Address;
+
 Create table If Not Exists Person (personId int, firstName varchar(255), lastName varchar(255))
 Create table If Not Exists Address (addressId int, personId int, city varchar(255), state varchar(255))
 Truncate table Person
